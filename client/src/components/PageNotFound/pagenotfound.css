@@ -1,0 +1,99 @@
+.PageNotFound{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #ccd3db;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.PageNotFound > h3{
+    font-size: 2vmax;
+    font-weight: 600;
+    font-family: cursive;
+    color: #555c66;
+}
+
+.PageNotFound > img{
+    width: 40vmax;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmax;
+}
+
+.content > h1{
+    color: #555c66;
+    font-weight: 900;
+    font-family: "Roboto";
+    font-size: 3vmax;
+}
+
+.content > p{
+    font-size: 1.2vmax;
+    letter-spacing: 0.1vmax;
+    font-family: "Roboto";
+    font-weight: bolder;
+    color: #555c66;
+    line-height: 1.5;
+    width: 50%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vmax;
+}
+
+.buttons > a:first-child{
+    padding: 1vmax 2vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #555c66;
+    border-radius: 3vmax;
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto";
+    font-size: 1vmax;
+    font-weight:bold;
+    transition: all 0.5s;
+    letter-spacing: 2px;
+}
+
+.buttons > a:first-child:hover{
+    background-color: white;
+    color: #555c66;
+}
+
+.buttons > a:last-child{
+    padding: 1vmax 2vmax;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid #555c66;
+    border-radius: 3vmax;
+    text-decoration: none;
+    color: #555c66;
+    font-family: "Roboto";
+    font-size: 1vmax;
+    font-weight:bold;
+    transition: all 0.5s;
+    letter-spacing: 2px;
+}
+
+.buttons > a:last-child:hover{
+    background-color: white;
+    border: 2px solid transparent;
+}

@@ -1,0 +1,248 @@
+.loginSignUpContainer {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(231, 231, 231);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.loginSignUpBox {
+  background-color: white;
+  width: 25vw;
+  height: 70vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.loginSignUpBox > div > button {
+  background-color: tomato;
+  height: 3px;
+  width: 50%;
+  border: none;
+  transition: all 0.5s;
+}
+
+.loginSignUpToggle {
+  display: flex;
+  height: 3vmax;
+}
+
+.loginSignUpToggle > p {
+  color: rgba(0, 0, 0, 0.678);
+  font-weight: 300;
+  font-size: 1vmax;
+  font-family: "Roboto";
+  transition: all 0.5s;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.loginSignUpToggle > p:hover {
+  color: tomato;
+}
+
+.loginForm,
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 2vmax;
+  height: 70%;
+  justify-content: space-evenly;
+  height: 70%;
+  transition: all 0.5s;
+}
+
+.signUpForm {
+  transform: translateY(-100%) translateX(-100vmax);
+}
+
+.loginForm > div,
+.signUpForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.loginForm > div > input,
+.signUpForm > div > input {
+  padding: 1vmax 4vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+  font-weight: 300;
+  font-size: 0.9vmax;
+  font-family: cursive;
+  outline: none;
+}
+
+.loginForm > div > svg,
+.signUpForm > div > svg {
+  position: absolute;
+  transform: translate(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+.loginForm > div > svg:last-child,
+.signUpForm > div > svg:last-child {
+  position: absolute;
+  right: 30px;
+}
+
+.loginForm > a {
+  color: rgba(0, 0, 0, 0.651);
+  text-decoration: none;
+  align-self: flex-end;
+  transition: all 0.5s;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 0.8vmax;
+}
+
+.loginForm > a:hover {
+  color: black;
+}
+
+.registerImg > img {
+  width: 3vmax;
+  border-radius: 100%;
+}
+
+.registerImg > input {
+  display: flex !important;
+  padding: 0% !important;
+}
+
+.registerImg > input::file-selector-button {
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  border: none;
+  margin: 0%;
+  font-weight: 400;
+  height: 5vh;
+  font-family: cursive;
+  font-size: 0.8vmax;
+  padding: 0 1vmax;
+  color: rgba(0, 0, 0, 0.623);
+  background-color: white;
+  transition: all 0.5s;
+}
+
+.registerImg > input::file-selector-button:hover {
+  background-color: rgb(224, 224, 224);
+}
+
+.loginBtn,
+.signUpBtn {
+  border: none;
+  background-color: tomato;
+  color: white;
+  font-weight: 300;
+  font-family: "Roboto";
+  font-size: 0.9vmax;
+  width: 100%;
+  padding: 0.8vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+}
+
+.loginBtn:hover,
+.signUpBtn:hover {
+  background-color: rgb(179, 66, 46);
+}
+
+.shiftToLeft {
+  transform: translateX(-100%);
+}
+
+.shiftToNeutral {
+  transform: translateX(0%);
+}
+
+.shiftToNeutralForm {
+  transform: translateX(0%) translateY(-100%);
+}
+
+.shiftToRight {
+  transform: translateX(100%);
+}
+
+@media screen and (max-width: 600px) {
+  .loginSignUpContainer {
+    background-color: white;
+  }
+
+  .loginSignUpBox {
+    width: 100vw;
+    height: 95vh;
+  }
+
+  .loginSignUpToggle {
+    height: 5vmax;
+  }
+
+  .loginSignUpToggle > p {
+    font-weight: 300;
+    font-size: 1.5vmax;
+    font-family: "Roboto";
+  }
+
+  .loginForm,
+  .signUpForm {
+    padding: 5vmax;
+  }
+
+  .loginForm > div > input,
+  .signUpForm > div > input {
+    padding: 2.5vmax 5vmax;
+    font-weight: 300;
+    font-family: cursive;
+    font-size: 1.7vmax;
+  }
+
+  .loginForm > div > svg,
+  .signUpForm > div > svg {
+    font-size: 2.8vmax;
+  }
+
+  .loginForm > a {
+    font-weight: 500;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 1.8vmax;
+  }
+
+  .registerImg > img {
+    width: 8vmax;
+    border-radius: 100%;
+  }
+
+  .registerImg > input::file-selector-button {
+    height: 7vh;
+    font-family: cursive;
+    font-weight: 400;
+    font-size: 1.8vmax;
+  }
+
+  .loginBtn,
+  .signUpBtn {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 1.9vmax;
+    padding: 1.8vmax;
+  }
+}
