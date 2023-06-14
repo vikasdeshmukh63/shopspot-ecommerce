@@ -11,6 +11,7 @@ const fileUpload = require("express-fileupload");
 const productRoute = require("./routes/productRoute");
 const userRoute = require("./routes/userRoute");
 const orderRoute = require("./routes/orderRoute");
+const paymentRoute = require("./routes/paymentRoute");
 
 // using middlewares
 app.use(express.json());
@@ -29,6 +30,7 @@ app.use(cors(corsOptions));
 app.use("/api/v1", productRoute);
 app.use("/api/v1", userRoute);
 app.use("/api/v1", orderRoute);
+app.use("/api/v1",paymentRoute);
 
 // using error middleware
 app.use(errorMiddleware);

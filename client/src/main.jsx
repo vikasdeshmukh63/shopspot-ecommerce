@@ -10,6 +10,7 @@ import { CookiesProvider } from 'react-cookie';
 
 axios.defaults.baseURL = "http://localhost:5000"
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <CookiesProvider>
     <Provider store={store}>
